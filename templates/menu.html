@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Меню{% endblock %}
+{% block content %}
+<h2>Наше Меню</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Menu</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <th scope="row">1</th>
+            <td>Pizza1</td>
+            <td>Tomato, cheese</td>
+            <td>{{ pizza1_price }} $</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Pizza Yoruichi</td>
+            <td>Pepperoni, cheese</td>
+            <td>{{ pizza_Yoruichi_price }} $$$</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Pizza de IT</td>
+            <td>Pineapple, meat</td>
+            <td>{{ pizza_IT_price }} $$</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
